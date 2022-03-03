@@ -57,7 +57,7 @@ type PolicyRule struct {
 	// Resources is a list of resources this rule applies to. '*' represents all resources.
 	// +optional
 	Resources []string `json:"resources,omitempty" protobuf:"bytes,3,rep,name=resources"`
-	// ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.
+	// ResourceNames is an optional allow list of names that the rule applies to.  An empty set means that everything is allowed.
 	// +optional
 	ResourceNames []string `json:"resourceNames,omitempty" protobuf:"bytes,4,rep,name=resourceNames"`
 
